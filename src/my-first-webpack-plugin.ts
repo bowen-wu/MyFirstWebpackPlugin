@@ -16,3 +16,5 @@ MyFirstWebpackPlugin.prototype.apply = function (compiler) {
         callback();
     });
 };
+
+module.exports = MyFirstWebpackPlugin;
