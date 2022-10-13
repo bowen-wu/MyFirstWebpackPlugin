@@ -20,4 +20,4 @@ class MyFirstWebpackPlugin {
     }
 }
 
-// module.exports = MyFirstWebpackPlugin;
+export { MyFirstWebpackPlugin };
