@@ -1,6 +1,11 @@
 {
-  "name": "my-first-webpack-plugin",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT"
+    "name": "my-first-webpack-plugin",
+    "version": "0.0.1",
+    "description": "This is my first webpack plugin",
+    "main": "./src/my-first-webpack-plugin.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/bowen-wu/MyFirstWebpackPlugin.git"
+    },
+    "license": "MIT"
 }
