@@ -1,11 +1,27 @@
 {
     "name": "my-first-webpack-plugin",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "This is my first webpack plugin",
-    "main": "./src/my-first-webpack-plugin.ts",
+    "main": "dist/my-first-webpack-plugin.js",
     "repository": {
         "type": "git",
         "url": "https://github.com/bowen-wu/MyFirstWebpackPlugin.git"
+    },
+    "scripts": {
+        "clean": "del-cli --dot=true \"./dist/**/*\"",
+        "build": "npm run clean && npm run build.compile",
+        "build.compile": "cross-env NODE_ENV=production babel src -d dist --verbose --extensions .ts --source-maps"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.4.4",
+        "@babel/core": "^7.4.4",
+        "@babel/preset-env": "^7.4.4",
+        "@babel/preset-typescript": "^7.3.3",
+        "cross-env": "^5.2.0",
+        "del-cli": "^1.1.0",
+        "typescript": "^3.4.5",
+        "webpack": "^5.74.0",
+        "webpack-cli": "^4.10.0"
     },
     "license": "MIT"
 }
