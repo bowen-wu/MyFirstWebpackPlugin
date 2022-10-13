@@ -1,6 +1,6 @@
 {
     "name": "my-first-webpack-plugin",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "This is my first webpack plugin",
     "main": "dist/my-first-webpack-plugin.js",
     "repository": {

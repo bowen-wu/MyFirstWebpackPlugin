@@ -1,5 +1,8 @@
 // A JavaScript class.
 class MyFirstWebpackPlugin {
+    constructor() {
+    }
+
     // Define `apply` as its prototype method which is supplied with compiler as its argument
     apply(compiler) {
         // 指定一个挂载到 webpack 自身的事件钩子。
